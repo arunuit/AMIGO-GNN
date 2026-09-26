@@ -273,7 +273,7 @@ git init
 git add .
 git commit -m "Initial AMIGO-GNN reproducible implementation"
 git branch -M main
-git remote add origin https://github.com/<YOUR-USERNAME>/AMIGO-GNN.git
+git remote add origin https://github.com/arunuit/AMIGO-GNN.git
 git push -u origin main
 ```
 
