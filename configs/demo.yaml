@@ -1,0 +1,46 @@
+seed: 42
+
+data:
+  samples: data/raw/samples.csv
+  nodes: data/raw/nodes.csv
+  edges: data/raw/edges.csv
+  sample_nodes: data/raw/sample_nodes.csv
+
+split:
+  train: 0.70
+  val: 0.15
+  test: 0.15
+  stratify: true
+
+model:
+  hidden_dim: 128
+  heads: 8
+  layers: 2
+  dropout: 0.5
+  num_classes: 3
+  bio_relu_lambda: 0.10
+
+training:
+  lr: 0.001
+  weight_decay: 0.00001
+  epochs: 200
+  patience: 20
+  batch_size: 16
+
+biomos:
+  population_size: 50
+  iterations: 100
+  alpha: 0.40
+  beta: 0.25
+  gamma: 0.20
+  delta: 0.15
+  graph_awareness: 0.30
+  eval_epochs: 5
+  enabled: true
+
+explain:
+  shap_background: 20
+  shap_samples: 10
+  shap_nsamples: 100
+  fidelity_samples: 50
+  fidelity_top_k: 10

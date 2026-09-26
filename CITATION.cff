@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "AMIGO-GNN reproducible implementation"
+message: "Please cite the associated AMIGO-GNN manuscript when using this repository."
+type: software
+authors:
+  - family-names: "AMIGO-GNN Authors"
+version: "1.0.0"
+date-released: 2026-09-24
